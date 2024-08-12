@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
     const [name, setName] = useState("");
@@ -6,7 +7,7 @@ export default function SignUp() {
     const [password, setPassword] = useState("");
     const [confirmpass, setConfirmpass] = useState("");
     const [number, setNumber] = useState("");
-
+    const navigate = useNavigate();
     const checkPass = () => {
         if (password !== confirmpass) {
             alert("Passwords do not match");
@@ -46,6 +47,7 @@ export default function SignUp() {
 
             if (response.ok) {
                 alert("User registered successfully");
+                navigate('/login')
             } else {
                 alert(`Error: ${data.error}`);
             }

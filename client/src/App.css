@@ -88,7 +88,6 @@ nav{
 
 
 
-
 /* main */
 
 
@@ -163,7 +162,84 @@ input::placeholder{
   color: white;
 }
 
+
+
+/* FlipLearn Cards */
+
+.qns{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+.text{
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.66);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+#question{
+  border: 2px solid rgba(255, 0, 0, 0.456);
+}
+#answer{
+  border: 2px solid #66FCF1;
+}
+
+
+
+/* cards */
+
+
+
+
+.cards{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  padding: 10px;
+  margin-top: 100px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  height:max-content;
+  width:50vw;
+  background-color: rgba(0, 0, 0, 0.66);
+  box-shadow: 1px 1px 10px #66FCF1;
+  margin-bottom: 200px;
+}
+.ques{
+  color: red;
+  padding: 10px;
+}
+.ans{
+  color: #66FCF1;
+  padding: 10px;
+}
+.pub{
+  display: flex;
+  justify-content: end;
+}
+
+.btn{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+
+/* cards for home */
+
 /* Foot  */
+
+
+
 .foot{
   background-color:black;
   color: #66FCF1;

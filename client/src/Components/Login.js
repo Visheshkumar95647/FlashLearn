@@ -25,7 +25,7 @@ export default function Login() {
             }else{
                 const { token } = data;
                 localStorage.setItem('token', token); 
-                navigate("/flashlearn");
+                navigate("/admin");
             }
         } catch (err) {
             alert("Please Try Again");

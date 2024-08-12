@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login";
 import Home from "./Components/Home";
 import Footer from "./Footer";
-import Nav from "./Components/Nav";
+import FlipLearn from "./Components/FlipLearn";
+
 export default function App() {
   return (
     <Router>
@@ -14,6 +15,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<FlipLearn/>} />
+         
         </Routes>
       </>
     <Footer/>
